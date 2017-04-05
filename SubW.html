@@ -193,7 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <section class="container">
-  <div class="button"> <a onclick="setTimeout(location.reload.bind(location), 570)" style="text-decoration: none"> 
+  <div class="button"> <a onclick="setTimeout(Wunsch, 570)" style="text-decoration: none"> 
   <p style="font-family:Fabrica; padding-top:2vh; color:#f7f7ef; " id="business-more" >Mehr davon</p></a> 
   </div>
 </section>
@@ -216,6 +216,10 @@ $button.addEventListener('click', function() {
   TweenMax.to($button, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
 });
     
+    function Wunsch () {
+  var Ziel = ("NaLos.html");
+  window.location.href = Ziel;
+}
 </script>
 <script src='Links/x.js'></script>
 <script type="text/javascript">

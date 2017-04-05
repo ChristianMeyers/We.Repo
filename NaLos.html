@@ -157,6 +157,7 @@
 
 
 
+
 </style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -180,31 +181,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+
 <section style="height:10vh; background:#474747"> <!-- Neu: Gelb: f7f7ef   Grün: 87cdbc   Grau:   474747 Blau: 304766 Rot:DA6A78  ALT: Gelb:f7f9ef Grün: 87ccbc Grau: 494949-->
   <a href="index.html" class="prev">Prev</a>
   <!-- hier evtl font size ändern in App! in 1.5em oder so hier evtl font size ändern in App! in 1.5em oder sohier evtl font size ändern in App! in -->
-  <p class="text-center" style="color: #f7f7ef; font-size:4vh; padding-top:2.3vh"> • Klinische Psychologie • </p>
+  <p class="text-center" style="color: #f7f7ef; font-size:4vh; padding-top:2.3vh"> • Ab zum Download &#x1F609; • </p>
 </section>
 
-<!-- hier iwie responsives Bild hier iwie responsives Bild hier iwie responsives Bild hier iwie responsives Bild hier iwie responsives Bild -->
-<section  style="margin-top:7vh; margin-bottom:10vh">
-  <center><div class="el" style="left:0px" >  </div></center>
-</section>
 
-<section class="container">
-  <div class="button"> <a  onclick="setTimeout(Wunsch, 570)" style="text-decoration: none" > 
-  <p style="font-family:Fabrica; padding-top:2vh; color:#f7f7ef; " id="klinische-more" >Mehr davon</p></a> 
+<p class="text-center" style="margin-top:20vh; font-size:1.2em"> <span style="color:#DA6A78;font-size:1.4em">Nice! Du interessierst Dich für Psychologie.</span> <br> <br>  Mehr davon gibt es in meiner App, die ich hier (ganz objektiv) empfehlen möchte. Ich freue mich sehr über Downloads, siehe Buttons :)  <p>
+
+
+  <section class="container" style="margin-top:15vh">
+  <div> <a id="playstoreCon" href="https://play.google.com/store/apps?hl=de" target="_blank" > <center><img width="250" type="image" src="images/website/android.png" class="grow img-responsive"/></center></a>
+    <a id="IOsCon" href="ios.html" > <center><img width="218" type="image" src="images/website/ios.png" class="grow img-responsive"/></center></a>
   </div>
 </section>
 
+
 <!-- in APp kann raus  in APp kann raus in APp kann raus in APp kann raus in APp kann raus in APp kann raus in APp kann raus in APp kann raus -->
-<div class="container"> 
-        <p  style="padding-top:8vh">
+<div class="container" style="margin-top:20vh"> 
+        <p>
             &copy; 2017 Christian Heidemeyer | <a id="impressumFromCo" href="impressum.html" style="color: #474747"> Impressum </a>
             </p>
 </div>
-
-<script src='Links/button.js'></script>
 <script>
     var $button = document.querySelector('.button');
 $button.addEventListener('click', function() {
@@ -215,18 +215,9 @@ $button.addEventListener('click', function() {
   TweenMax.to($button, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
 });
     
-function Wunsch () {
-  var Ziel = ("NaLos.html");
-  window.location.href = Ziel;
-}
+</script>
+<script src='Links/button.js'></script>
 </script>
 <script src='Links/x.js'></script>
-<script type="text/javascript">
-    var path = 'images/subpages/klinische/',
-    imgs = ['Paeda.jpg','Paeda2.jpg'],
-    i = Math.floor(Math.random()*imgs.length);
-  $('.el').append("<img src='"+path+imgs[i]+"'>").hide().fadeIn(2000);
-  </script>
-
 </body>
 </html>
