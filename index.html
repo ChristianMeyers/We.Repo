@@ -133,6 +133,69 @@
   z-index: -1;
 }
 
+/* Ab hier Cookie */
+
+#okCookie{
+  background-color:#474747;
+  color:#f7f7ef;
+  position:fixed;
+  bottom:0;
+  left:0;
+  font-size:14px;
+  width:100%;
+  padding:4px;
+  font-family:Fabrica;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+  border-top:1px solid #ccc;
+  z-index:10;
+}
+
+#okCookie p{margin:0 0 10px 0; float:left; padding:5px 0px;}
+
+#okCookie #okClose, #okCookie #okCprivacy{
+  padding:5px 20px;
+  float:right;
+  margin-left:10px;
+  text-decoration:none;
+  border-radius:3px;
+  color:#f7f7ef;
+}
+
+#okCookie #okClose{
+  background-color:#87cdbc;
+  text-shadow:0px 1px 1px #507F2B;
+  box-shadow:inset 0px -1px 1px #507F2B;
+}
+
+#okCookie #okClose:hover{background-color:#87cdbc}
+
+#okCookie #okCprivacy{
+  background-color:#DA6A78;
+  text-shadow:0px 1px 1px #63666B;
+  box-shadow:inset 0px -1px 1px #63666B;
+}
+
+#okCookie #okCprivacy:hover{background-color:#a0a8ae}
+
+.okcBeginAnimate{
+    -webkit-animation: myfirst 0.6s; 
+    animation: myfirst 0.6s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+} 
+
 </style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -177,7 +240,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section class="container2" id="about" style="background-color: #f7f7ef; height:100vh">
     <div style="position: fixed; top:0%; left: 0%">
-            <h3 class="text-center" style="padding-top:8vh;color:#474747 "> Website momentan unter Bearbeitung | Dies ist die Webpräsenz der bald erscheinenden Psytastic App - Psychologisches direkt aus der Uni | Kontakt: chris@psytastic.de</h3>
+            <h3 class="text-center" style="padding-top:1.6vh;color:#474747 "> Worum gehts? 1 Minute Aufmerksamkeit bitte</h3>
+            <p class="text-center col-md-6 col-sm-12" style="padding:2vh;font-size:2.3vh"> In einer Studie wurden Versuchsteilnehmer für 35 Sekunden für angebliches Warten in ein Büro geführt. Kurz darauf sollten sie alles benennen, das sie in dem Büro gesehen hatten. Interessant: Etwa 30% der Teilnehmer erinnerte Bücher – obwohl in dem Büro keine waren!
+            <br>
+            <br>
+            Warum erzähle ich das? Um zu zeigen, dass unsere Wahrnehmung (und somit Erinnerung) oft nicht so funktioniert, wie wir meinen.
+            <br>
+            <br>
+            Ich glaube, wenn eines die Welt besser macht, dann ist es Bildung. Und in Zeiten des Vorurteils, narzisstischer Staatsführer und „Fake-News" dürfte psychologische Bildung besonders relevant sein. Die Psytastic App soll ein kleiner Schritt in diese Richtung sein.
+            </p>
+
+
+
+            Es war am Ende des Jahres 2016, mein Master in Psychologie an der Uni Münster hatte gerade begonnen, als mein Vater etwa folgendermaßen ein Gespräch beginnen wollte: "Erzähl doch mal etwas, das du im Bachelor gelernt hast."
+...
+Japs. Genau. Erstmal lange Stille. Ich glaube das Gespräch drehte sich danach um Trump und Pizza. Aber nicht um Psychologie.
+Das brachte mich zum Nachdenken. Ich wollte es zuerst nicht wahr haben, aber es stimmte: Ich bin ein ganz normaler, Bulimie-lernender, Reinstopf-Auskotz-Student. Der alles wieder vergisst, was er gelernt hat.
+Das fand ich richtig traurig. Es folgte eine kleinere Depression (nach klinischen Kriterien wohl eher eine unauffällige). Und dann der Entschluss.
+Ich würde in den nächsten Semesterferien jede relevante Vorlesung noch einmal durchgehen. Von vorne bis hinten! Und dabei jeden interessanten Fakt, jede interessante Studie herausschreiben. Einerseits für mich - und andererseits würde ich es der Öffentlichkeit kostenlos in einer App zur Verfügung stellen, damit alle mehr über Psychologie lernen können. 
+Ich glaube, wenn eines die Welt besser macht, dann ist es Bildung. Und in Zeiten des Vorurteils,  narzisstischer Staatsführer und „Fake-News" dürften Erkenntnisse der Wissenschaft des Verhaltens und der Wahrnehmung von besonderer Relevanz sein.
+Tja, wer hätte das gedacht? Wenn Du das hier liest, dann hab ich es bis heute wohl durchgezogen. Ich hoffe, es haben ein paar Leute Freude daran.
+
+
+
+
+
+
+
+
+
+
     </div>
   </section>
   
@@ -204,5 +296,63 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p class="text-right" style="margin-right:1vh;color:#f7f7ef;font-size:13px">  </p>
   </section>
+  <script>
+
+    (function(){
+  
+  //Change these values
+  var msg = "Diese Webseite verwendet Cookies, um die Nutzererfahrung zu optimieren. Durch ein Weiterverwenden dieser Webseite stimmst Du der Datenschutzrichtlinie zu.";
+  var closeBtnMsg = "OK";
+  var privacyBtnMsg = "Google Infos";
+  var privacyLink = "https://www.google.com/policies/technologies/cookies/";
+  
+  //check cookies 
+  if(document.cookie){
+   var cookieString = document.cookie;
+   var cookieList = cookieString.split(";");
+   // if cookie named OKCookie is found, return
+   for(x = 0; x < cookieList.length; x++){
+     if (cookieList[x].indexOf("OKCookie") != -1){return}; 
+   }
+  }
+  
+  var docRoot = document.body;
+  var okC = document.createElement("div");
+  okC.setAttribute("id", "okCookie");
+  var okCp = document.createElement("p");
+  var okcText = document.createTextNode(msg); 
+  
+  //close button
+  var okCclose = document.createElement("a");
+  var okcCloseText = document.createTextNode(closeBtnMsg);
+  okCclose.setAttribute("href", "#");
+  okCclose.setAttribute("id", "okClose");
+  okCclose.appendChild(okcCloseText);
+  okCclose.addEventListener("click", closeCookie, false);
+ 
+  //privacy button
+  var okCprivacy = document.createElement("a");
+  var okcPrivacyText = document.createTextNode(privacyBtnMsg);
+  okCprivacy.setAttribute("href", privacyLink);
+  okCprivacy.setAttribute("id", "okCprivacy");
+  okCprivacy.appendChild(okcPrivacyText);
+  
+  //add to DOM
+  okCp.appendChild(okcText);
+  okC.appendChild(okCp);
+  okC.appendChild(okCclose);
+  okC.appendChild(okCprivacy);
+  docRoot.appendChild(okC);
+  
+  okC.classList.add("okcBeginAnimate");
+  
+  function closeCookie(){
+    var cookieExpire = new Date();
+    cookieExpire.setFullYear(cookieExpire.getFullYear() +2);
+    document.cookie="OKCookie=1; expires=" + cookieExpire.toGMTString() + ";";
+    docRoot.removeChild(okC);
+  }
+  
+})();</script>
 </body>
 </html>
