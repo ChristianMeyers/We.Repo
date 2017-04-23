@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Psytastic</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Links/bootstrap.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/website/512.png"/>
+  <link rel="icon" type="image/x-icon" href="images/website/512.png"/>
+  <style>
+  @font-face {
+    font-family: Fabrica;
+    src: url('Links/Fabrica.otf');
+    }
+ 
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      .prev,
+.next {
+  -moz-transition: -moz-transform, 100ms;
+  -o-transition: -o-transform, 100ms;
+  -webkit-transition: -webkit-transform, 100ms;
+  transition: transform, 100ms;
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 9vh;
+  height: 9vh;
+  margin-top:0.5vh;
+  margin-left:0.9vw;
+  transform: translatez(0);
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;                           
+  background-color: transparent;
+
+}
+
+
+.prev:after,
+.next:after {
+  -moz-transition: -moz-transform, 100ms;
+  -o-transition: -o-transform, 100ms;
+  -webkit-transition: -webkit-transform, 100ms;
+  transition: transform, 100ms;
+  position: absolute;
+  box-sizing: border-box;
+  border-top: 2px solid rgba(255, 255, 255, 0.75);
+  border-left: 2px solid rgba(255, 255, 255, 0.75);
+  content: "";
+  width: 2em;
+  height: 2em;
+  top: 50%;
+  margin-top: -1em;
+}
+
+.prev {
+  left: 0;
+}
+.prev:after {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-top: 2px solid rgba(255, 255, 255, 0.75);
+  border-left: 2px solid rgba(255, 255, 255, 0.75);
+  left: 56%;
+  margin-left: -1em;
+}
+
+
+.prev:hover,
+.next:hover {
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.prev:hover:after,
+.next:hover:after {
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.prev:hover:after {
+  -moz-transform: rotate(-45deg) scale(1.05);
+  -ms-transform: rotate(-45deg) scale(1.05);
+  -webkit-transform: rotate(-45deg) scale(1.05);
+  transform: rotate(-45deg) scale(1.05);
+}
+
+
+.prev:active,
+.next:active {
+  -moz-transition: -moz-transform, 50ms;
+  -o-transition: -o-transform, 50ms;
+  -webkit-transition: -webkit-transform, 50ms;
+  transition: transform, 50ms;
+  -moz-transform: scale(1.025);
+  -ms-transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+  transform: scale(1.025);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.prev:active:after,
+.next:active:after {
+  border-top: 2px solid rgba(0, 0, 0, 0.65);
+  border-left: 2px solid rgba(0, 0, 0, 0.65);
+}
+
+.prev:active:after {
+  -moz-transform: rotate(-45deg) scale(1.025);
+  -ms-transform: rotate(-45deg) scale(1.025);
+  -webkit-transform: rotate(-45deg) scale(1.025);
+  transform: rotate(-45deg) scale(1.025);
+}
+
+
+/* ab hier button */
+.button {
+  background: #87cdbc;
+  width: 180px;
+  padding: 4px 0;
+  margin-left: 50%;
+  margin-top:-1vh;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  border-radius: 3px;
+  text-decoration: none;
+}
+.button p {
+  font-family: 'Fabrica';
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: #927608;
+  opacity: 0.4;
+  bottom: -30px;
+}
+
+
+
+</style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MKXD5C4');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+
+
+
+
+
+
+
+<body style="background: #f7f7ef; font-family:Fabrica">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKXD5C4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<section style="height:10vh; background:#474747"> <!-- Neu: Gelb: f7f7ef   Grün: 87cdbc   Grau:   474747 Blau: 304766 Rot:DA6A78  ALT: Gelb:f7f9ef Grün: 87ccbc Grau: 494949-->
+  <a href="/" class="prev">Prev</a>
+  <!-- hier evtl font size ändern in App! in 1.5em oder so hier evtl font size ändern in App! in 1.5em oder sohier evtl font size ändern in App! in -->
+  <p class="text-center" style="color: #f7f7ef; font-size:3.6vh; padding-top:2.3vh"> • Persönlichkeitspsychologie • </p>
+</section>
+
+<!-- hier iwie responsives Bild hier iwie responsives Bild hier iwie responsives Bild hier iwie responsives Bild hier iwie responsives Bild -->
+<section  style="margin-top:3vh; margin-bottom:10vh">
+  <center><div class="el" style="left:0px" >  </div></center>
+</section>
+
+<section class="container">
+  <div class="button"> <a onclick="setTimeout(Wunsch, 570)" style="text-decoration: none"> 
+  <p style="font-family:Fabrica; padding-top:2vh; color:#f7f7ef; " id="persoenlichkeit-more" >Mehr davon</p></a> 
+  </div>
+</section>
+
+<!-- in APp kann raus  in APp kann raus in APp kann raus in APp kann raus in APp kann raus in APp kann raus in APp kann raus in APp kann raus -->
+<div class="container"> 
+        <p  style="padding-top:8vh">
+            &copy; 2017 Christian Heidemeyer | <a id="impressumFromCo" href="impressum.html" style="color: #474747"> Impressum </a>
+            </p>
+</div>
+
+<script src='Links/button.js'></script>
+<script>
+    var $button = document.querySelector('.button');
+$button.addEventListener('click', function() {
+  var duration = 0.3,
+      delay = 0.08;
+  TweenMax.to($button, duration, {scaleY: 1.6, ease: Expo.easeOut});
+  TweenMax.to($button, duration, {scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay});
+  TweenMax.to($button, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
+});
+    
+    function Wunsch () {
+  var Ziel = ("download.html");
+  window.location.href = Ziel;
+}
+</script>
+<script src='Links/x.js'></script>
+<script type="text/javascript">
+    var path = 'images/subpages/persoenlichkeit/',
+    imgs = ['persoenlichkeit.png'],
+    i = Math.floor(Math.random()*imgs.length);
+  $('.el').append("<img src='"+path+imgs[i]+"'>").hide().fadeIn(2000);
+  </script>
+
+</body>
+</html>
