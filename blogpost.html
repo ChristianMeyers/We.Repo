@@ -1,0 +1,457 @@
+<html>
+<head>
+  <title>Psytastic: Psychologische Fakten und Studien direkt aus der Uni</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interessiert an Psychologie? Fang heute an, beeindruckende Studien und Fakten aus der Psychologie kennen zu lernen - in der Psytastic App von Studenten Chris und Marcel.">
+  <meta name="keywords" content="Psytastic, Psychologie, App">
+  <meta name="google-site-verification" content="4eSW2wFMs3MjMLcG2y6tmWJ4aESdyhHHB-oGxDUzcDc" />
+  <link rel="stylesheet" href="Links/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/website/512.png"/>
+  <link rel="icon" type="image/x-icon" href="images/website/512.png"/>
+  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+  <script type="text/javascript">
+function onLoad() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+// device APIs are available
+//
+function onDeviceReady() {
+    document.addEventListener("pause", onPause, false);
+    document.addEventListener("resume", onResume, false);
+    window.analytics.startTrackerWithId('UA-96442408-1');
+    window.analytics.trackView('about');
+    window.analytics.trackEvent('click', 'about');
+}
+
+function onPause() {
+  window.ga.trackEvent('bildschirm', 'pauseAbout');
+}
+function onResume() {
+  window.ga.trackEvent('bildschirm', 'resumeAbout');
+}
+
+function onClick1 () {
+  window.analytics.trackEvent('click', 'story');
+}
+
+function onClick2 () {
+  window.analytics.trackEvent('click', 'hinweise');
+}
+
+
+</script> 
+  <style>
+  @font-face {
+    font-family: Fabrica;
+    src: url('Links/Fabrica.otf');
+    }
+ 
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      .prev,
+.next {
+  -moz-transition: -moz-transform, 100ms;
+  -o-transition: -o-transform, 100ms;
+  -webkit-transition: -webkit-transform, 100ms;
+  transition: transform, 100ms;
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 9vh;
+  height: 9vh;
+  margin-top:0.5vh;
+  margin-left:0.9vw;
+  transform: translatez(0);
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;                           
+  background-color: transparent;
+
+}
+
+
+.prev:after,
+.next:after {
+  -moz-transition: -moz-transform, 100ms;
+  -o-transition: -o-transform, 100ms;
+  -webkit-transition: -webkit-transform, 100ms;
+  transition: transform, 100ms;
+  position: absolute;
+  box-sizing: border-box;
+  border-top: 2px solid rgba(255, 255, 255, 0.75);
+  border-left: 2px solid rgba(255, 255, 255, 0.75);
+  content: "";
+  width: 2em;
+  height: 2em;
+  top: 50%;
+  margin-top: -1em;
+}
+
+.prev {
+  left: 0;
+}
+.prev:after {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-top: 2px solid rgba(255, 255, 255, 0.75);
+  border-left: 2px solid rgba(255, 255, 255, 0.75);
+  left: 56%;
+  margin-left: -1em;
+}
+
+
+.prev:hover,
+.next:hover {
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.prev:hover:after,
+.next:hover:after {
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.prev:hover:after {
+  -moz-transform: rotate(-45deg) scale(1.05);
+  -ms-transform: rotate(-45deg) scale(1.05);
+  -webkit-transform: rotate(-45deg) scale(1.05);
+  transform: rotate(-45deg) scale(1.05);
+}
+
+
+.prev:active,
+.next:active {
+  -moz-transition: -moz-transform, 50ms;
+  -o-transition: -o-transform, 50ms;
+  -webkit-transition: -webkit-transform, 50ms;
+  transition: transform, 50ms;
+  -moz-transform: scale(1.025);
+  -ms-transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+  transform: scale(1.025);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.prev:active:after,
+.next:active:after {
+  border-top: 2px solid rgba(0, 0, 0, 0.65);
+  border-left: 2px solid rgba(0, 0, 0, 0.65);
+}
+
+.prev:active:after {
+  -moz-transform: rotate(-45deg) scale(1.025);
+  -ms-transform: rotate(-45deg) scale(1.025);
+  -webkit-transform: rotate(-45deg) scale(1.025);
+  transform: rotate(-45deg) scale(1.025);
+}
+
+
+/* AB hier dropdown menu */
+
+
+.float-right {
+  float: right;
+}
+
+.fa {
+  font-size: .8em;
+  line-height: 22px !important;
+}
+
+dropdown {
+  display: inline-block;
+  margin: 20px 50px;
+}
+
+dropdown label, dropdown ul li {
+  display: block;
+  width: 200px;
+  background: #87cdbc;
+  padding: 15px 20px;
+  box-shadow: 0px 5px 14px #888888;
+}
+
+dropdown label:hover, dropdown ul li:hover {
+  background: #DA6A78;
+  color: white;
+  cursor: pointer;
+}
+
+dropdown label {
+  color: #474747;
+  border-left: 0px solid #87cdbc;
+  border-radius: 0 5px 0 0;
+  position: relative;
+  z-index: 2;
+}
+
+dropdown input {
+  display: none;
+}
+
+dropdown input ~ ul {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  top: -20px;
+  z-index: 1;
+}
+
+dropdown input:checked + label {
+  background: #87cdbc;
+  color: white;
+}
+
+dropdown input:checked ~ ul {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+}
+
+dropdown ul li:nth-child(1) {
+  border-left: 4px solid #E74C3C;
+}
+dropdown ul li:nth-child(1) .fa {
+  color: #E74C3C;
+}
+dropdown ul li:nth-child(1):hover {
+  background: #E74C3C;
+  color: white;
+}
+dropdown ul li:nth-child(1):hover .fa {
+  color: white;
+}
+
+dropdown ul li:nth-child(2) {
+  border-left: 4px solid #0072B5;
+}
+dropdown ul li:nth-child(2) .fa {
+  color: #0072B5;
+}
+dropdown ul li:nth-child(2):hover {
+  background: #0072B5;
+  color: white;
+}
+dropdown ul li:nth-child(2):hover .fa {
+  color: white;
+}
+
+dropdown ul li:nth-child(3) {
+  border-left: 4px solid #2C3E50;
+}
+dropdown ul li:nth-child(3) .fa {
+  color: #2C3E50;
+}
+dropdown ul li:nth-child(3):hover {
+  background: #2C3E50;
+  color: white;
+}
+dropdown ul li:nth-child(3):hover .fa {
+  color: white;
+}
+
+.animate {
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  /* Chrome and Safari */
+  -moz-backface-visibility: hidden;
+  /* Firefox */
+  -ms-backface-visibility: hidden;
+  /* Internet Explorer */
+}
+
+/* Ab hier About Section Dropdown Menue */
+
+
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: none;
+  color: #f7f7ef; 
+  font-size: 21px;
+}
+nav ul li {
+  display: block;
+  background: #f7f7ef;
+}
+nav ul li.active {
+  background: #f7f7ef;
+}
+nav ul li.active a {
+  color: #1abc9c;
+  border-left: 2px solid #f7f7ef;
+}
+nav ul li.active ul {
+  display: block;
+}
+nav ul li:last-child {
+  border-bottom: none;
+}
+nav ul li ul {
+  display: none;
+}
+nav ul li ul li a {
+  background: #f7f7ef;
+  padding-left: 40px;
+  color: #f7f7ef;
+}
+nav ul li ul li a:hover {
+  padding-left: 45px;
+}
+nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: #f7f7ef;
+  text-decoration: none;
+  transition: 0.2s linear;
+  border-left: 2px solid transparent;
+}
+nav ul li a:hover {
+  background: #fff;
+  padding-left: 20px;
+  border-left: 2px solid white;
+  color: #f7f7ef;
+  text-decoration: none;
+}
+nav .info {
+  background: #fff;
+  border-left: 2px solid #f7f7ef;
+  padding: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+
+
+
+</style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MKXD5C4');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body onload="onLoad()" id="about" style="background: #f7f9ef; font-family:Fabrica">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKXD5C4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<section id="story1" style="margin-top:14vh">
+<p style="font-size:15px;margin-left:8vh; margin-right: 8vh; text-align:left;color:#474747">
+
+<span style="color:#474747;font-size:17px"><span style="color:#DA6A78">Die Psytastic App</span> - das ist deine Chance zu lernen, wie du Menschen und die Welt um dich herum besser verstehen kannst. <span style="color:#DA6A78">#ourmissionknowledge</span>, das heißt für uns: Psychologie Wissen für alle, alltagsnah, ohne komplizierte Wörter und mit garantiertem Aha-Effekt! <br><br>
+
+Warum aber Speicherplatz für psychologisches Wissen frei machen? Ganz einfach, weil <span style="color:#DA6A78">psychologische Bildung</span> wichtig ist. Warum? Das zeigen wir dir in der nächsten Zeit an verschiedenen Beispielen, heute mit dem Thema...</span>
+
+<blockquote style="margin-left:5vh; margin-right: 5vh; margin-top: 5vh;color: 474747">Was hat das Tragen eines Fahrradhelms mit dem Terroranschlag vom 11. September 2001 in New York zu tun? Seid bereit für eine spannende neue Perspektive</blockquote>
+
+<p style="font-size:17px;margin-left:3vh; margin-right: 3vh; text-align:left;color:474747">
+Du und ich, wir alle treffen über 20.000 Entscheidungen täglich. An viele Entscheidungen, die ich gestern getroffen habe, kann ich mich jetzt schon nicht mehr erinnern. Dich kann ich danach auch nicht fragen, weil ich täglich meine ganz eigenen Entscheidungen treffe, mir eigene Gedanken mache und meinen eigenen Gefühlen ausgesetzt bin. Genau wie du.  <br><br>
+
+Wie und welche Entscheidungen wir treffen ist manchmal rein intuitiv, wie viele sagen “aus einem Bauchgefühl heraus”. <span style="color:#DA6A78">Bauchgefühl-Entscheidungen</span> haben einen guten Ruf: “Wenn du nicht weiter weißt, dann hör einfach auf dein Bauchgefühl”. Häufig ist das auch der richtige Weg, wie eine Studie zeigt: 85 erfahrenen Handballspielern wurden Szenen aus professionellen Spielen präsentiert. Einmal sollten sie spontan - aus einem Bauchgefühl heraus - entscheiden, welchen Spielzug sie machen. Und einmal hatten sie Gelegenheit für eine genaue Analyse und 45 Sekunden Überlegungszeit. Es zeigte sich: Erstere, Bauchgefühl-Entscheidungen waren weitaus besser.<sup>[1]</sup> Also, immer aus dem Bauchgefühl heraus entscheiden, oder? Lieber nicht.  <br><br>
+
+Entscheidend ist bei der Studie: Die intuitive Entscheidung basierte auf jahrelanger Erfahrung, auf der <span style="color:#DA6A78">Kompetenz</span> der Entscheider. Manchmal werden Bauchgefühl-Entscheidungen aber auch - ob bewusst oder unbewusst - aus Angst getroffen. Angst vor einer bestimmten Vorstellung oder nur Angst vor einem Gefühl. Ohne jahrelange Erfahrung oder tatsächliche Kompetenz. Hier ein Beispiel: Eine logische Schlussfolgerung aus der Angst, Opfer eines Fahrradunfalls zu werden, ist das Tragen eines Schutzhelmes. <br><br>
+
+Unser Bauchgefühl sagt uns erstmal deutlich, “jetzt fahren wir viel sicherer”. Wir fühlen uns besser. Aber wie ist die Faktenlage: Fährt man auch sicherer? Um es geradeheraus zu sagen: Nicht unbedingt. Denn <span style="color:#DA6A78">Schutzausrüstungen</span> führen zu einer <span style="color:#DA6A78">erhöhten Risikobereitschaft</span>.<sup>[2]</sup> Warum das denn jetzt bitte? <br><br>
+
+Durch das schützende Gefühl auf unserem Kopf fahren wir eher leichtsinniger, probieren Moves und Fahrmanöver aus, an die wir vorher noch nie gedacht haben.<sup>[3]</a>
+</sup> Der gegenteilige Effekt also, ausgelöst aus einer Entscheidung, die intuitiv war.  Die Angst führt zu einer <span style="color:#DA6A78">potenziell gefährlichen</span>, unbewussten Konsequenz. Im Falle des Fahrradhelms ist diese Konsequenz nur geringfügig gefährlich und es lässt sich klar sagen: Prinzipiell ist sie richtig - tragt also einen Fahrradhelm, es ist am Ende trotzdem sicherer (mehr Infos siehe Fußnote<sup>[4]</a></sup>)!<br><br>
+
+Gehen wir aber mal einen Schritt weiter. Intuitive und sogenannte Bauchgefühl-Entscheidungen werden bei uns auch bei <span style="color:#DA6A78">weitaus angstauslösenderen</span> Ereignissen getroffen. So können auch Anschläge und Terror irrationale psychologische Folgen nach sich ziehen, die in die falsche Richtung schlagen können - wie ihr in Teil 2 lesen könnt.
+
+<nav style="margin-top:3vh">
+    <ul>
+      <li class='sub-menu'>
+        <a href='#' onclick="return false;" id="teil2">
+          <div class='fa' style="color:#474747;border-bottom:3px SOLID #474747"></div>
+          <br>
+          <center><p style="color:474747">Teil 2: Eine Waffe gegen Terrorismus</p></center>
+          <div class='fa fa-angle-down right'></div>
+        </a>
+        <ul>
+<p style="font-size:17px;margin-left:3vh; margin-right: 3vh; text-align:left;color:#474747">
+     
+Nach den Anschlägen vom 11. September hatten viele Amerikaner Angst vor dem Fliegen. Stattdessen nutzten sie den Autoverkehr und wollten alles vermeiden, was mit den Anschlägen in Verbindung stand. Ein Flugticket zu buchen kam also für viele erstmal nicht in Frage. Dadurch, dass nun viel mehr Amerikaner ihr Auto nutzten, kam es zu einem anderen Problem. Es gab viel mehr Opfer im Straßenverkehr als in den Jahren davor. <span style="color:#DA6A78">Wissenschaftler</span> haben berechnet, dass etwa 1500 Amerikaner zusätzlich zu den normalen Verkehrstoten starben.<sup>[5]</a></sup> Am 11. September starben 3000 Personen. Mit den Verkehrstoten danach führte der Terroranschlag also zu insgesamt 4500 Toten - aufgrund einer Bauchgefühl-Entscheidung.  <br><br>
+
+Die Angst der Menschen ist natürlich völlig verständlich - aber gleichzeitig <span style="color:#DA6A78">übersteigert</span>. Warum? Eine zentrale Rolle spielen hierbei die Medien. Sie führen zu einer <span style="color:#DA6A78">verzerrten</span>, falschen <span style="color:#DA6A78">Wahrnehmung</span> der Realität: Jeden Tag die gleichen Bilder von abstürzenden Flugzeugen zu zeigen, erweckt in uns den Eindruck (ob bewusst oder unbewusst): Anscheinend stürzt jedes Flugzeug ab (siehe Fußnote zu “<span style="color:#DA6A78">Verfügbarkeitsheuristik</span>”<sup>[6]</sup>). <br><br>
+
+Vor diesem Hintergrund lässt sich feststellen: Hier hatte die Angst zweifellos eine (unbewusste) gefährliche - um nicht zu sagen tödliche - Konsequenz. Es wurde eine falsche - bzw. irrationale - Bauchgefühl-Entscheidung getroffen. Denn tatsächlich ist Fliegen deutlich sicherer als Autofahren (mehr dazu siehe Fußnote<sup>[7]</sup>). <br><br>
+
+Jetzt kommt es aber noch besser/schlimmer. Nach den Anschlägen nahm nicht nur der Straßenverkehr zu, sondern auch die <span style="color:#DA6A78">Hassverbrechen</span> gegen Muslime. Von 2000 bis 2001 stiegen sie von 33 auf 546 Verbrechen pro Jahr.<sup>[8]</sup> Gerechtfertigt? Werft hierfür mal einen Blick auf folgende Tabelle: <br><br>
+
+
+<center><style type="text/css">.ritz .waffle a { color: inherit; }.ritz .waffle .s4{border-bottom:2px SOLID #474747;background-color:transparent;text-align:right;color:#474747;font-family:'docs-Fabrica',Arial;font-size:12pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s0{border-bottom:2px SOLID #474747;background-color:transparent;text-align:center;font-weight:bold;color:#474747;font-family:'docs-Fabrica',Arial;font-size:12pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s1{background-color:transparent;text-align:left;color:#474747;font-family:'docs-Fabrica',Arial;font-size:12pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s2{background-color:transparent;text-align:right;color:#474747;font-family:'docs-Fabrica',Arial;font-size:12pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s3{border-bottom:2px SOLID #474747;background-color:transparent;text-align:left;color:#474747;font-family:'docs-Fabrica',Arial;font-size:12pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}</style><div class="ritz grid-container" dir="ltr"><table class="waffle" cellspacing="0" cellpadding="0"><thead><tr><th class="row-header freezebar-origin-ltr"></th><th id="0C0" style="width:450px" class="column-headers-background"></th><th id="0C1" style="width:100px" class="column-headers-background"></th></tr></thead><tbody><tr style='height:20px;'><th id="0R0" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;"></div></th><td class="s0" dir="ltr" colspan="2"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:bold;color:#474747;"><br>Anzahl der Amerikaner die jährlich getötet werden, durch:<sup>[9]</sup><br></span></td></tr><tr style='height:20px;'><th id="0R1" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;"></div></th><td class="s1" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">Islamischer Jihad-Immigrant</span></td>
+  <td class="s2" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">2</span></td></tr><tr style='height:20px;'><th id="0R2" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;"></div></th><td class="s1" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">rechtsextreme Terroristen</span></td><td class="s2" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">5</span></td></tr>
+  <tr style='height:20px'><th id="0R3" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 48px;"></div></th><td class="s1 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 447px; left: -1px;"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">alle islamische Jihad Terroristen (eingeschlossen US-Bürger)</span></div></td><td class="s2" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;"><span style="color:#DA6A78">9</span></td></tr><tr style='height:20px;'><th id="0R4" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;"></div></th><td class="s1" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">bewaffnete <span style="color:#DA6A78">Kleinkinder</span></td><td class="s2" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">21</span></td></tr><tr style='height:20px;'><th id="0R5" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;"></div></th><td class="s1" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">einen Blitz</span></td><td class="s2" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">31</span></td></tr><tr style='height:20px;'><th id="0R6" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;"></div></th><td class="s1" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">einen <span style="color:#DA6A78">Rasenmäher</span></td><td class="s2" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">69</span></td></tr><tr style='height:20px;'><th id="0R7" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;"></div></th><td class="s1" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">Zusammenstoß mit einem Bus</span></td><td class="s2" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">264</span></td></tr><tr style='height:20px;'><th id="0R8" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;"></div></th><td class="s1" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">das <span style="color:#DA6A78">Herausfallen</span> aus dem Bett</span></td><td class="s2" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">737</span></td></tr><tr style='height:20px;'><th id="0R9" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;"></div></th><td class="s3" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">erschossen werden durch einen anderen Amerikaner</span></td><td class="s4" dir="ltr"><span style="font-size:12pt;font-family:Fabrica,Arial;font-weight:400;color:#474747;">11,737</span></td></tr></tbody></table></div></center>
+
+
+
+<br><br>
+
+
+<p style="font-size:17px;margin-left:3vh; margin-right: 3vh; text-align:left;color:#474747">
+Die klare Antwort lautet: <span style="color:#DA6A78">Nein</span>! Sich von seinen Gefühlen leiten zu lassen, war wieder die falsche Entscheidung. Laut den Fakten, also den Statistiken in der Tabelle, sind das größte Problem der USA nicht die Terroristen - es sind ihre Rasenmäher und ihre Betten. Krass formuliert, hier noch deutlicher: Das größte Problem sind <span style="color:#DA6A78">Sie selbst</span>! Viel eher als durch Terrorismus stirbt man, weil man durch andere Amerikaner erschossen wird.  <br><br>
+
+Was wir als Risiko wahrnehmen, muss also nicht immer ein Risiko sein! Terrorlagen gibt es heute noch, zunächst ist da auch kein Ende in Sicht. Trump hat entschieden, keine Menschen mehr aus islamisch geprägten Ländern einreisen zu lassen. Er nutzt damit die - verhältnismäßig völlig unberechtigte - Angst der Bevölkerung vor Terror aus. Eine Angst, die eher den Rasenmähern und Betten gelten sollte. Quasi. <br><br>
+
+Ein psychologisches Bewusstsein hilft uns Entscheidungen aus einer weiteren Perspektive betrachten zu können und uns - vielleicht - auch mal bremsen zu können. Ihr wisst nun, wann man vorsichtig bei Bauchgefühl-Entscheidungen sein sollte. Dadurch habt ihr jetzt der stärksten Waffe von Terroristen - dem Erzeugen von Angst - etwas entgegen zu setzen! <span style="color:#DA6A78">#sogarMeinRasenmäherIstGefährlicherAlsDu</span> <br><br>
+
+Man darf nicht vergessen: Wir versuchen gerade die Macht der Gefühle (nämlich Angst) mit den Werkzeugen der Logik zu bekämpfen. Dass das schwierig ist, steht außer Frage. Aber wir haben euch hoffentlich gerade verständlich zeigen können, dass es im weitesten Sinne <span style="color:#DA6A78">Leben retten kann</span>. Also, teilt sehr gerne diesen Artikel, erzählt euren Freunden davon, schreit es in die Welt hinaus…. und macht Platz für die <span style="color:#DA6A78">Psytastic App</span>.  <br><br>
+        </ul>
+      </li>
+    </nav>
+
+<br><br>
+<p style="font-size:13px;margin-left:3vh; margin-right: 3vh; text-align:left;color:#474747" id="fn1"><sup>1 </sup> Zur Originalstudie: <a target="_blank" href="https://www.researchgate.net/publication/222298005_Take_the_First_Option-Generation_and_Resulting_Choices"> https://www.researchgate.net/publication/222298005_Take_the_First_Option-Generation_and_Resulting_Choices </a></p>
+<p style="font-size:13px;margin-left:3vh; margin-right: 3vh; text-align:left;color:#474747" id="fn2"><sup>2 </sup> Mehr Infos: <a target="_blank" href="https://www.spektrum.de/news/schutzhelme-erhoehen-die-risikobereitschaft/1398053"> https://www.spektrum.de/news/schutzhelme-erhoehen-die-risikobereitschaft/1398053 </a></p>
+<p style="font-size:13px;margin-left:3vh; margin-right: 3vh; text-align:left;color:#474747" id="fn3"><sup>3 </sup> Zur Originalstudie: <a target="_blank" href="http://journals.sagepub.com/doi/abs/10.1177/0956797615620784"> http://journals.sagepub.com/doi/abs/10.1177/0956797615620784
+ </a></p>
+<p style="font-size:13px;margin-left:3vh; margin-right: 3vh; text-align:left;color:#474747" id="fn4"><sup>4 </sup> Mehr Infos: <a target="_blank" href="https://www.zeit.de/wissen/gesundheit/2017-07/fahrradhelm-sicherheit-radfahren"> https://www.zeit.de/wissen/gesundheit/2017-07/fahrradhelm-sicherheit-radfahren </a></p>
+<p style="font-size:13px;margin-left:3vh; margin-right: 3vh; text-align:left;color:#474747" id="fn5"><sup>5 </sup> Zur Originalstudie: <a target="_blank" href="http://onlinelibrary.wiley.com/doi/10.1111/j.1539-6924.2006.00753.x/full"> http://onlinelibrary.wiley.com/doi/10.1111/j.1539-6924.2006.00753.x/full </a></p>
+<p style="font-size:13px;margin-left:3vh; margin-right: 3vh; text-align:left;color:#474747" id="fn6"><sup>6 </sup> Mehr Infos: <a target="_blank" href="https://de.wikipedia.org/wiki/Entscheidungspsychologie#Verf%C3%BCgbarkeitsheuristik"> https://de.wikipedia.org/wiki/Entscheidungspsychologie#Verf%C3%BCgbarkeitsheuristik </a></p>
+<p style="font-size:13px;margin-left:3vh; margin-right: 3vh; text-align:left;color:#474747" id="fn7"><sup>7 </sup> Mehr Infos: <a target="_blank" href="http://www.faz.net/aktuell/gesellschaft/absturz-in-den-alpen/wie-gefaehrlich-ist-fliegen-die-risiko-statistiken-13505192.html"> http://www.faz.net/aktuell/gesellschaft/absturz-in-den-alpen/wie-gefaehrlich-ist-fliegen-die-risiko-statistiken-13505192.html </a></p>
+<p style="font-size:13px;margin-left:3vh; margin-right: 3vh; text-align:left;color:#474747" id="fn8"><sup>8 </sup> Mehr Infos: <a target="_blank" href="https://www.pri.org/stories/2016-09-12/data-hate-crimes-against-muslims-increased-after-911"> https://www.pri.org/stories/2016-09-12/data-hate-crimes-against-muslims-increased-after-911 </a></p>
+<p style="font-size:13px;margin-left:3vh; margin-right: 3vh; text-align:left;color:#474747" id="fn9"><sup>9 </sup> Englische Vorlage der Tabelle mit genaueren Quellen: <a target="_blank" href="https://www.huffingtonpost.com/todd-r-miller/the-freakonomics-of-extre_b_11821634.html?guccounter=1"> https://www.huffingtonpost.com/todd-r-miller/the-freakonomics-of-extre_b_11821634.html?guccounter=1 </a></p>
+
+
+<br>
+<br>
+
+
+</p>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+    $('.sub-menu a').click(function(){
+    $(this).parent("li").children("ul").slideToggle('active');
+    });
+</script>
+</body>
+</html>
